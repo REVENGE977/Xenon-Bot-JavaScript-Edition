@@ -8,7 +8,7 @@ module.exports = class ping {
 
     async run(client, message,args) {
         try{
-            let info = client.emojis.get("655091815401127966")
+            let info = client.emojis.get("655091815401127966") || "ℹ️"
             let pingEmbed = new RichEmbed()
             .setTitle(`${info} Info`)
             .setDescription(`I have a **latency** of **${Math.round(client.ping)}ms**.`)
