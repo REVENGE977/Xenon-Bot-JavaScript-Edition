@@ -8,7 +8,7 @@ module.exports = class invite {
 
     async run(client, message, args) {
         try{
-            let info = client.emojis.get("655091815401127966")
+            let info = client.emojis.get("655091815401127966") || "ℹ️"
             client.generateInvite(['ADMINISTRATOR']).then(link => {
             let inviteEmbed = new RichEmbed()
             .setTitle(`${info} Info`)
