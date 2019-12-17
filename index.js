@@ -28,7 +28,7 @@ client.on("message", async (message) => {
 
 });
 
-let info = client.emojis.get("655091815401127966"); //https://cdn.discordapp.com/emojis/655091815401127966.png?v=1
+let info = client.emojis.get("655091815401127966") || "ℹ️" //https://cdn.discordapp.com/emojis/655091815401127966.png?v=1
 
 client.on("guildCreate", guild => {
     let newserverEmbed = new RichEmbed()
