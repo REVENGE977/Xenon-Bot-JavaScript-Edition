@@ -1,6 +1,7 @@
 const { Client, RichEmbed } = require("discord.js");
 const { CommandHandler } = require("djs-commands");
 const client = new Client({ disableEveryone: true });
+var approx = require('approximate-number');
 const config = require("./config.json");
 const CH = new CommandHandler({
     folder: __dirname + "/Commands/",
@@ -10,6 +11,7 @@ const CH = new CommandHandler({
 
 client.on("ready", () => {
     console.log("Ready !");
+    client.user.setActivity(`${approx(client.guilds.size)} Guilds | x!help`, {type: "WATCHING"})
 });
 
 client.on("message", async (message) => {
