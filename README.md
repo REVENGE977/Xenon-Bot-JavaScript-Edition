@@ -32,3 +32,6 @@ node index.js
 
 ### Issues ?
 Found an issue ? create an issue in the repository and I will fix the problem when I can.
+
+
+### Soon x!build command .
