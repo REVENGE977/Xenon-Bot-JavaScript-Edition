@@ -39,3 +39,7 @@ Found an issue ? create an issue in the repository and I will fix the problem wh
 
 
 ### Soon x!build command .
+
+
+### Last Updates:
+- Some Problems Get Fixed Now !
