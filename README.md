@@ -42,4 +42,4 @@ Found an issue ? create an issue in the repository and I will fix the problem wh
 
 
 ### Last Updates:
-- Some Problems Get Fixed Now !
+- Some problems have been solved
