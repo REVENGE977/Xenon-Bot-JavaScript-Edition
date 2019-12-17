@@ -8,7 +8,7 @@ module.exports = class tiers {
 
     async run(client, message, args) {
         try{
-            let info = client.emojis.get("655091815401127966");
+            let info = client.emojis.get("655091815401127966") || "ℹ️"
             let tierEmbed = new RichEmbed()
             .setTitle(`${info} Info`)
             .setDescription(`**Xenon Pro** and **Xenon Turbo** are the **paid versions** of Xenon. They extend the existing features of Xenon and add new ones.
