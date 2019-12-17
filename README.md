@@ -1,4 +1,8 @@
 # Xenon Bot JavaScript Edition
+
+![XenonAvatar](https://4.top4top.net/p_14462k8201.png)
+
+
 non-official xenon bot JavaScript edition , a bot for backup discord servers and more features .
 
 ### Warning:
