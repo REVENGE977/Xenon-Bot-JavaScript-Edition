@@ -17,7 +17,7 @@ Modules:
 - djs-commands
 
 ```sh
-npm i discord.js --save && npm i fs --save && npm i djs-commands --save
+npm i discord.js --save && npm i fs --save && npm i djs-commands --save && npm i approximate-number --save
 ```
 
 **Step 2:** Configure The Bot
