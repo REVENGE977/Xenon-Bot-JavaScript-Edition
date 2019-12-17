@@ -12,7 +12,7 @@ module.exports = class {
               
             let helpEmbed = new RichEmbed()
             .setTitle("__**Creating**__")
-            .setDescription(`**x!build**           Choose between different options and build your discord server in less than a minute
+            .setDescription(`
             
             __**Security**__
             
