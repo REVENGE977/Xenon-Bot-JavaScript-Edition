@@ -16,11 +16,11 @@ module.exports = class backup {
 
     async run(client, message, args) {
         try{
-            let info = client.emojis.get("655091815401127966"); //https://cdn.discordapp.com/emojis/655091815401127966.png?v=1
-            let waiting = client.emojis.get("655695570769412096"); //https://images-ext-1.discordapp.net/external/lWj3uW4qvfFB9t0QgGsDJ8vLvh5bSObQ-wwUxYFH4wo/https/images-ext-1.discordapp.net/external/AzWR8HxPJ4t4rPA1DagxJkZsOCOMp4OTgwxL3QAjF4U/https/cdn.discordapp.com/emojis/424900448663633920.gif
-            let green = client.emojis.get("655696285286006784"); //https://images-ext-2.discordapp.net/external/NU9I3Vhi79KV6srTXLJuHxOgiyzmEwgS5nFAbA13_YQ/https/cdn0.iconfinder.com/data/icons/small-n-flat/24/678134-sign-check-512.png
-            let error = client.emojis.get("655704809483141141"); //https://cdn.discordapp.com/emojis/655704809483141141.png?v=1
-            let warning = client.emojis.get("656030540310380574"); //https://cdn.discordapp.com/emojis/656030540310380574.png?v=1
+            let info = client.emojis.get("655091815401127966") || "ℹ️" //https://cdn.discordapp.com/emojis/655091815401127966.png?v=1
+            let waiting = client.emojis.get("655695570769412096") || "⌛" //https://images-ext-1.discordapp.net/external/lWj3uW4qvfFB9t0QgGsDJ8vLvh5bSObQ-wwUxYFH4wo/https/images-ext-1.discordapp.net/external/AzWR8HxPJ4t4rPA1DagxJkZsOCOMp4OTgwxL3QAjF4U/https/cdn.discordapp.com/emojis/424900448663633920.gif
+            let green = client.emojis.get("655696285286006784") || "✅"//https://images-ext-2.discordapp.net/external/NU9I3Vhi79KV6srTXLJuHxOgiyzmEwgS5nFAbA13_YQ/https/cdn0.iconfinder.com/data/icons/small-n-flat/24/678134-sign-check-512.png
+            let error = client.emojis.get("655704809483141141") || "❌" //https://cdn.discordapp.com/emojis/655704809483141141.png?v=1
+            let warning = client.emojis.get("656030540310380574") || "⚠️" //https://cdn.discordapp.com/emojis/656030540310380574.png?v=1
 
 
             let guildsonlyEmbed = new RichEmbed()
@@ -139,7 +139,7 @@ module.exports = class backup {
             }
 
             if(args[1] === "load") {
-                let error = client.emojis.get("655704809483141141");
+                let error = client.emojis.get("655704809483141141") || "❌"
                 let code = args[2];
                 let errorEmbed = new RichEmbed()
                 .setTitle(`${error}  Error`)
