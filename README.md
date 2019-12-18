@@ -19,6 +19,7 @@ Modules:
 - fs
 - discord.js
 - djs-commands
+- approximate-number
 
 ```sh
 npm i discord.js --save && npm i fs --save && npm i djs-commands --save && npm i approximate-number --save
