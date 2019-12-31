@@ -228,7 +228,14 @@ module.exports = class backup {
                 
             }
 
-            if(args === "purge") {
+            if(args[1] === "purge") {
+              let errorEmbed = new RichEmbed()
+              .setTitle(`${error}  Error`)
+              .setDescription(`You did'nt backup any server yet
+[Support](https://discord.club/discord)`)
+                .setColor("#a11616")
+              if(!backups[message.author.id]) return message.channel.send(errorEmbed)
+              
                 let warningEmbed = new RichEmbed()
                 .setTitle(`${warning}  Warning`)
                 .setDescription(`Are you sure that you want to delete all your backups?
@@ -253,6 +260,7 @@ __This cannot be undone!__`)
                             .setDescription(`Deleted all your backups.`)
                             .setColor("#59C57B")
                         message.channel.send(deletedsuc)
+                      msg.delete();
                     })
 
                     no.on("collect", r => {
@@ -261,6 +269,7 @@ __This cannot be undone!__`)
 
                 })
             }
+
 
             if(!args[1]) {
                 
