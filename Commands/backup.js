@@ -39,7 +39,7 @@ module.exports = class backup {
                             
                             [Support](https://discord.club/discord)`)
                             .setColor("#a11616")
-                        message.channel.send(havnthighest) 
+                        return message.channel.send(havnthighest) 
                     }
                 })
 
