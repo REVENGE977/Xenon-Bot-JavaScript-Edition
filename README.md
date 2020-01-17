@@ -42,6 +42,10 @@ Found an issue ? create an issue in the repository and I will fix the problem wh
 
 ### Soon x!build command .
 
+### Using Glitch.com Host ?
+If you will host this in glitch.com host then just remix my project
+Link: https://glitch.com/edit/#!/remix/xenonbot-remix
+
 
 ### Last Updates:
 - Some problems have been solved
