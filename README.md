@@ -20,7 +20,7 @@ Modules:
 - hastebin-gen
 
 ```sh
-npm i discord.js --save && npm i fs --save && npm i djs-commands --save && npm i approximate-number --save && npm i hastebin-gen --save
+npm i discord.js fs hastebin-gen approximate-number djs-commands --save
 ```
 
 **Step 2:** Configure The Bot
