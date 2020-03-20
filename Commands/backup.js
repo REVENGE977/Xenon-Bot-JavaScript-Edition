@@ -9,7 +9,7 @@ module.exports = class backup {
     constructor() {
         this.name = "backup",
         this.alias = [""],
-        this.usage = "x!backup"
+        this.usage = "x!backup or !xbackup"
     }
 
 
@@ -25,12 +25,21 @@ module.exports = class backup {
 
             let guildsonlyEmbed = new RichEmbed()
             .setTitle(`${error} Error`)
-            .setDescription(`This command **can't be used** in **private** messages
+            .setDescription(`This command **can't be used** in **DMs**
+             
+            [Support](https://discord.club/discord)`)
+            .setColor("#a11616")
+            
+            let usersonlyEmbed = new RichEmbed()
+            .setTitle(`${error} Error`)
+            .setDescription(`This command **can't be used** by a **Bot**
             
             [Support](https://discord.club/discord)`)
             .setColor("#a11616")
+            
             if (message.channel.type === 'dm') return message.channel.send(guildsonlyEmbed);
-            if(args[1] === "create") {
+            if (message.author.bot) return message.channel.send(usersonlyEmbed);
+            if(args[1] === "create"|| args[1] === "c") {
              await   message.guild.roles.filter(r => r.name !== message.guild.member(client.user.id).highestRole.name).forEach(r => {
                     if (r.comparePositionTo(message.guild.member(client.user.id).highestRole) > 0){
                         let havnthighest = new RichEmbed()
@@ -138,7 +147,7 @@ module.exports = class backup {
 
             }
 
-            if(args[1] === "load") {
+            if(args[1] === "load" || args[1] === "l") {
                 let error = client.emojis.get("655704809483141141") || "❌"
                 let code = args[2];
                 let errorEmbed = new RichEmbed()
@@ -183,7 +192,7 @@ module.exports = class backup {
             }
 
 
-            if(args[1] === "info") {
+            if(args[1] === "info" || args[1] === "i") {
                 let id = args[2];
                 let MissingbackupinfoEmbed = new RichEmbed()
                 .setTitle(`${error}  Error`)
