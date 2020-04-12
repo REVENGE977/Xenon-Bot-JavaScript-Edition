@@ -28,7 +28,7 @@ Open config.json and paste the bot token and type the prefixes ,
 the default prefixes are x! and !x you can change them if you want ..
 
 **Step 3:** Running The Bot
-open terminal/powershell or command prompt in the directory that the bot files are , and then type:
+open terminal/powershell or command prompt in the directory that the bot files in , and then type:
 ```sh
 node index.js
 ```
