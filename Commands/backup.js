@@ -96,7 +96,6 @@ module.exports = class backup {
                 name: r.name,
                 color: r.color,
                 hoist: r.hoist,
-                permissions: r.permissions,
                 mentionable: r.mentionable,
                 position: r.position
               };
@@ -208,7 +207,6 @@ module.exports = class backup {
             .createRole({
               name: role.name,
               color: role.color,
-              permissions: role.permissions,
               hoist: role.hoist,
               mentionable: role.mentionable,
               position: role.position
@@ -223,7 +221,6 @@ module.exports = class backup {
           .forEach(async function(ch) {
             message.guild.createChannel(ch.name, {
               type: ch.type,
-              permissionOverwrites: ch.permissionOverwrites
             });
           });
 
@@ -232,7 +229,6 @@ module.exports = class backup {
           .forEach(async function(ch) {
             message.guild.createChannel(ch.name, {
               type: ch.type,
-              permissionOverwrites: ch.permissionOverwrites
             }).then(c => {
                 const parent = message.guild.channels
                   .filter(c => c.type === "category")
